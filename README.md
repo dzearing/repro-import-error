@@ -2,6 +2,9 @@
 
 When import errors occur, the global "error" event thrown on `window` should contain the initiator information.
 
+Bug logged here
+https://bugs.chromium.org/p/chromium/issues/detail?id=1371551
+
 ## Repro steps
 
 1. git clone this repo
