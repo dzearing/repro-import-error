@@ -36,4 +36,3 @@ When import errors occur, the global "error" event thrown on `window` should con
 ## Why this is important
 
 When unexpected errors like this occur, we have a bug somewhere in our code. We need details about where; otherwise it's just about impossible to fix. Typically apps have a global error handler to funnel bad things to telemetry. Devs can use this information to categorize issues and funnel them to the owners. We need the initiator information to connect this up and fix. In inner loop development, when this kind of error happens, we can create dev-friendly workflows to auto correct import maps or exports maps in package.json.
-
