@@ -32,3 +32,8 @@ When import errors occur, the global "error" event thrown on `window` should con
 | MacOS 12.6 Monterey | Edge 106.0.1370.34 | Yes |
 | MacOS 12.6 Monterey | Safari 16.0 | Yes |
 | MacOS 12.6 Monterey | Firefox 103.0.1 | No, works as expected |
+
+## Why this is important
+
+When unexpected errors like this occur, we have a bug somewhere in our code. We need details about where; otherwise it's just about impossible to fix. Typically apps have a global error handler to funnel bad things to telemetry. Devs can use this information to categorize issues and funnel them to the owners. We need the initiator information to connect this up and fix. In inner loop development, when this kind of error happens, we can create dev-friendly workflows to auto correct import maps or exports maps in package.json.
+
