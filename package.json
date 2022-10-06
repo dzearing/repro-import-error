@@ -1,0 +1,10 @@
+{
+  "name": "repro-import-error",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.0.1"
+  }
+}

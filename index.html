@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Repro of import error</title>
+    <script type="module">
+      window.addEventListener('error', ev => {
+        const { message, filename, lineno, colno } = ev;
+
+        if (message?.indexOf('Error resolving module specifier') >= 0) {
+          // This is the error we need to handle
+          if (
+            filename?.indexOf('test.js') === -1 ||
+            lineno === 0 ||
+            colno === 0
+          ) {
+            alert(`ERROR: The filename/lineno/colno should have referenced the right line/column in ./test.js, but instead ${filename}:${lineno}:${colno}`);
+          } else {
+            alert(`The error was correctly reported to be initiated in ${filename}:${lineno}:${colno}`);
+          }
+        } else {
+          alert('Unexpected error! See console for details.');
+          console.log('Unexpected error', ev);
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <script type="module" src="./test.js"></script>
+  </body>
+</html>
