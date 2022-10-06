@@ -7,7 +7,7 @@
       window.addEventListener('error', ev => {
         const { message, filename, lineno, colno } = ev;
 
-        if (message?.indexOf('Error resolving module specifier') >= 0) {
+        if (message?.indexOf('module specifier') >= 0) {
           // This is the error we need to handle
           if (
             filename?.indexOf('test.js') === -1 ||
