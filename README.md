@@ -23,12 +23,12 @@ When import errors occur, the global "error" event thrown on `window` should con
 
 ## OS/Browser details
 
-| OS | Browser | Does it repro? |
+|  Browser | OS | Does it repro? |
 |-|-|-|
-| Windows 11 Pro 22000.978 | Chrome 105.0.5195.127 | Yes |
-| Windows 11 Pro 22000.978 | Edge 105.0.5195.127 | Yes |
-| Windows 11 Pro 22000.978 | Firefox 105.0.2 | No, works as expected |
-| MacOS 12.6 Monterey | Chrome 106.0.5249.91 | Yes |
-| MacOS 12.6 Monterey | Edge 106.0.1370.34 | Yes |
-| MacOS 12.6 Monterey | Safari 16.0 | Yes |
-| MacOS 12.6 Monterey | Firefox 103.0.1 | No, works as expected |
+| Chrome 105.0.5195.127 | Windows 11 Pro 22000.978 | Yes |
+| Chrome 106.0.5249.91 | MacOS 12.6 Monterey |Yes |
+| Edge 105.0.5195.127 | Windows 11 Pro 22000.978 | Yes |
+| Edge 106.0.1370.34 | MacOS 12.6 Monterey |Yes |
+| Firefox 105.0.2 | Windows 11 Pro 22000.978 | No, works as expected |
+| Firefox 103.0.1 | MacOS 12.6 Monterey |No, works as expected |
+| Safari 16.0 MacOS 12.6 Monterey | Yes |
