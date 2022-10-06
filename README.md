@@ -31,7 +31,7 @@ When import errors occur, the global "error" event thrown on `window` should con
 | Edge 106.0.1370.34 | MacOS 12.6 Monterey |Yes |
 | Firefox 105.0.2 | Windows 11 Pro 22000.978 | No, works as expected |
 | Firefox 103.0.1 | MacOS 12.6 Monterey |No, works as expected |
-| Safari 16.0 MacOS 12.6 Monterey | Yes |
+| Safari 16.0 | MacOS 12.6 Monterey | Yes |
 
 ## Why this is important
 
